@@ -2566,7 +2566,7 @@ body {
   font-size: 26px;
   font-weight: 300;
 }
-.main-content-header span {
+.main-content-header a {
   float: right;
   padding-right: 130px;
   color: #f5d731;
@@ -2598,7 +2598,8 @@ body {
 }
 .slider-box > img {
   width: 100%;
-  height: 150px;
+  // height: 150px;
+  height: 25vh;
   
 }
 .slider-box {
@@ -2623,13 +2624,17 @@ body {
   border-image: linear-gradient(to bottom, #fbc740 0%, #f0e625 100%);
   border-image-slice: 1;
 }
+.main-content-header a {
+  text-decoration: none;
+}
 
 
 // FOR LAPTOP
 @media only screen and (min-width: 1224px) {
   .slider-box > img {
     width: 100%;
-    height: 165px;
+    // height: 165px;
+    height: 25vh;
   }
   .center-step > span {
     color: #f5d731;
@@ -2637,7 +2642,7 @@ body {
     font-size: 20px;
     font-family: Roboto;
   }
-  .main-content-header span {
+  .main-content-header a {
     padding-right: 50px;
   }
   .main-content {
@@ -2702,12 +2707,15 @@ body {
     font-size: 20px;
     font-family: Roboto;
   }
+  .header-phone {
+    text-decoration: none;
+  }
   .top-header-button > p:hover {
     cursor: pointer;
   }
   .slider-box > img {
     width: 100%;
-    height: 243px;
+    height: 25vh;
   }
   // .bx-slider div:nth-child(2) {
   //   border-bottom: 2px solid #1f1f1f;
@@ -2715,6 +2723,19 @@ body {
   .bx-slider{
     background-color: #1f1f1f;
   } 
+  }
+  @media only screen and (min-width: 1930px) {
+    .slider-box > img {
+      width: 100%;
+      height: 25vh;
+    }
+    .main-content {
+      width: 78%;
+    }
+    .bx-slider {
+      width: 22% ;
+    }
+
   }
   @media only screen and (min-width : 768px) and (max-width: 1223px) {
     #bx-slider {
@@ -2781,5 +2802,18 @@ body {
       font-size: 20px;
       font-family: Roboto;
     }
+    .main-content-header a {
+      font-size: 18px;
+    }
+    .main-content-paragraph {
+      font-size: 26px;
+    }
+    .main-content-paragraph-2 {
+      font-size: 24px;
+    }
+    body #screen1 .startQuest {
+      margin-top: 50px;
+    }
+    
    
   }
