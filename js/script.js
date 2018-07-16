@@ -385,7 +385,7 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.navigation .container>p').click(function () {
+    $('.navigation .container>p, .navigation > .next,.navigation > .prev ').click(function () {
         var hideScreen = $(this).closest('.screen');
         if ($(this).hasClass("prev")){
             var showScreen = hideScreen.prev();
@@ -422,19 +422,28 @@ $(document).ready(function () {
             , 3000
     );
 });
+$(document).ready(function () {
+    $('#screen10 input').focus(function(){
+        $(this).parent().addClass("focuslabel");
+    })
+    $('#screen10 input').focusout(function(){
+        $(this).parent().removeClass("focuslabel");
+    })
+});
+
 
 //Отправка формы
 $(document).ready(function () {
     $('#screen10 .itogBtn input[type="button"]').click(function () {
         if ($('#phone').val().replace(/\D+/g,"").length<10){
-            $('#screen10 .phone .alert').show("slow").effect("shake", 500);
+            $('#screen10 .alert').show("slow").effect("shake", 500);
         }
         else{
             // $code = $('select[name="code"]').val();
             $phone = $('input[name="phone"]').val();
             $tel = $phone;
             $(this).prop( 'disabled', true ).val('Отправка...');
-            $('#screen10 .phone .alert').hide();        
+            $('#screen10 .alert').hide();        
             
             $.ajax({
             url:     "send-calculator-form.php", //url страницы (action_ajax_form.php)

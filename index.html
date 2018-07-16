@@ -15,13 +15,16 @@
     <meta charset="UTF-8">
     <title>Расчёт стоимости шкафов-купе в Киевее. Шкафы-купе от производителей. </title>
     <meta name="description" content="Шкафы-купе по индивидуальным проектам. Цены от производителей! Рассчитайте стоимость шкафа-купе за 2 минуты! Доставка и установка по Киеву!">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/jquery.ui.touch-punch.min.js"></script>    
+    <script src="js/owl.carousel.min.js"></script>    
     <script src="js/script.js"></script>
     <script src="js/url.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="css/fonts.css">
@@ -29,8 +32,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet/less" href="css/style.less">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    
 
 
 
@@ -359,31 +364,38 @@
                                 <p class="prev mobNav" style="display: none">
                                     <img src="img/prev.png" alt=""> Предыдущий шаг
                                 </p>
-                                <p class="prev">
+                                <!-- <p class="prev">
                                     <img src="img/prev.png" alt=""> Предыдущий шаг
-                                </p>
-                                <p class="next">
+                                </p> -->
+                                <!-- <p class="next">
                                     Следующий шаг
                                     <img src="img/next.png" alt="">
-                                </p>
+                                </p> -->
                                 <ul class="steps">
+                                       
                                     <li class="active" id="step2">
-                                        <p>1</p>
+                                        <div>1 шаг</div>
+                                        <p>Комната</p>
                                     </li>
                                     <li id="step3">
-                                        <p>2</p>
+                                        <div>2 шаг</div>
+                                        <p>Тип</p>
                                     </li>
                                     <li id="step4">
-                                        <p>3</p>
+                                            <div>3 шаг</div>
+                                        <p>Размер</p>
                                     </li>
                                     <li id="step5">
-                                        <p>4</p>
+                                            <div>4 шаг</div>
+                                        <p>Наполнение</p>
                                     </li>
                                     <li id="step6">
-                                        <p>5</p>
+                                            <div>5 шаг</div>
+                                        <p>Вид</p>
                                     </li>
                                     <li id="step7">
-                                        <p>6</p>
+                                            <div>6 шаг</div>
+                                        <p>Условия</p>
                                     </li>
                                 </ul>
                             </div>
@@ -437,10 +449,16 @@
                                 </ul>
                             </div>
                         </div>
+                        <nav class="navigation">
+                                <p class="next">
+                                        Следующий шаг
+                                        <img src="img/next.png" alt="">
+                                </p>
+                        </nav>
                     </div>
-                    <div class="openNextStep">
+                    <!-- <div class="openNextStep">
                         <p>Далее</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen4">
@@ -454,34 +472,42 @@
                             <p class="prev mobNav" style="display: none">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
-                            <p class="prev">
+                            <!-- <p class="prev">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
-                            </p>
-                            <p class="next">
+                            </p> -->
+                            <!-- <p class="next">
                                 Следующий шаг
                                 <img src="img/next.png" alt="">
-                            </p>
+                            </p> -->
                             <ul class="steps">
-                                <li class="done" id="step2">
-                                    <p>1</p>
+                                <li id="step2">
+                                        <div>1 шаг</div>
+                                        <p>Комната</p>
                                 </li>
                                 <li class="active" id="step3">
-                                    <p>2</p>
+                                    <div>2 шаг</div>
+                                    <p>Тип</p>
                                 </li>
                                 <li id="step4">
-                                    <p>3</p>
+                                        <div>3 шаг</div>
+                                        <p>Размер</p>
                                 </li>
                                 <li id="step5">
-                                    <p>4</p>
+                                    <div>4 шаг</div>
+                                    <p>Наполнение</p>
                                 </li>
                                 <li id="step6">
-                                    <p>5</p>
+                                        <div>5 шаг</div>
+                                        <p>Вид</p>
                                 </li>
                                 <li id="step7">
-                                    <p>6</p>
+                                        <div>6 шаг</div>
+                                        <p>Условия</p>
                                 </li>
                             </ul>
+                            
                         </div>
+                        
                     </nav>
                     <div class="container">
                         <div class="plashka">
@@ -495,9 +521,9 @@
                                             <p class="imgBlock korpus selected"></p>
                                             <a href="#" class="toolTip" title="Имеет полноценную единую конструкцию, состоящую из боковых и задних стенок, потолка, пола, перегородок, ящиков и раздвижных дверей (полноценный отдельно стоящий шкаф). Преимущества такого шкафа: возможность перемещать по квартире, например, при ремонте.">
                                                 <input type="radio" name="shkafType" id="korpus" value="Корпусный" checked> Корпусный
-                                                <p class="vopros">
+                                                <!-- <p class="vopros">
                                                     ?
-                                                </p>
+                                                </p> -->
                                             </a>
                                         </label>
                                     </li>
@@ -506,9 +532,9 @@
                                             <p class="imgBlock vstroenny"></p>
                                             <a href="#" class="toolTip" title='Шкаф, встроенный в нишу в Вашей квартире, либо "вмонтированный" в стену. Не имеющий задней, боковой стенки, дна, потолка или одного из вышеперечисленного. Преимущества такого шкафа: максимальное использование свободного пространства комнаты для хранения.'>
                                                 <input type="radio" name="shkafType" id="vstroenny" value="Встроенный"> Встроенный
-                                                <p class="vopros">
+                                                <!-- <p class="vopros">
                                                     ?
-                                                </p>
+                                                </p> -->
                                             </a>
                                         </label>
                                     </li>
@@ -517,9 +543,9 @@
                                             <p class="imgBlock uglovoy"></p>
                                             <a href="#" class="toolTip" title="Встроенный или же отдельно стоящий шкаф-купе, устанавливающийся в угол. Такой шкаф позволит Вам максимально использовать свободное пространство комнаты для хранения.">
                                                 <input type="radio" name="shkafType" id="uglovoy" value="Угловой"> Угловой
-                                                <p class="vopros">
+                                                <!-- <p class="vopros">
                                                     ?
-                                                </p>
+                                                </p> -->
                                             </a>
                                         </label>
                                     </li>
@@ -538,7 +564,7 @@
                                     <!--                                </li>-->
                                 </ul>
                             </div>
-                            <div class="dontKnow">
+                            <!-- <div class="dontKnow">
                                 <label for="dontKnow">
                                     <p class="pseudoBtn">
                                         Пока не знаю
@@ -547,12 +573,21 @@
                                         <input type="radio" name="shkafType" id="dontKnow" value="Не выбрано">
                                     </p>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
+                        <nav class="navigation">
+                                <p class="prev">
+                                        <img src="img/prev.png" alt=""> Предыдущий шаг
+                                    </p>
+                                <p class="next">
+                                        Следующий шаг
+                                        <img src="img/next.png" alt="">
+                                </p>
+                        </nav>
                     </div>
-                    <div class="openNextStep">
+                    <!-- <div class="openNextStep">
                         <p>Далее</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen5">
@@ -566,31 +601,37 @@
                             <p class="prev mobNav" style="display: none">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
-                            <p class="prev">
+                            <!-- <p class="prev">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
-                            </p>
-                            <p class="next">
+                            </p> -->
+                            <!-- <p class="next">
                                 Следующий шаг
                                 <img src="img/next.png" alt="">
-                            </p>
+                            </p> -->
                             <ul class="steps">
-                                <li class="done" id="step2">
-                                    <p>1</p>
+                                <li id="step2">
+                                        <div>1 шаг</div>
+                                        <p>Комната</p>
                                 </li>
-                                <li class="done" id="step3">
-                                    <p>2</p>
+                                <li id="step3">
+                                    <div>2 шаг</div>
+                                    <p>Тип</p>
                                 </li>
-                                <li id="step4" class="active">
-                                    <p>3</p>
+                                <li class="active" id="step4">
+                                        <div>3 шаг</div>
+                                        <p>Размер</p>
                                 </li>
                                 <li id="step5">
-                                    <p>4</p>
+                                    <div>4 шаг</div>
+                                    <p>Наполнение</p>
                                 </li>
                                 <li id="step6">
-                                    <p>5</p>
+                                        <div>5 шаг</div>
+                                        <p>Вид</p>
                                 </li>
                                 <li id="step7">
-                                    <p>6</p>
+                                        <div>6 шаг</div>
+                                        <p>Условия</p>
                                 </li>
                             </ul>
                         </div>
@@ -638,9 +679,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="openNextStep">
+                    <nav class="navigation">
+                        <p class="prev">
+                                <img src="img/prev.png" alt=""> Предыдущий шаг
+                            </p>
+                        <p class="next">
+                                Следующий шаг
+                                <img src="img/next.png" alt="">
+                        </p>
+                </nav>
+                    <!-- <div class="openNextStep">
                         <p>Далее</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen6">
@@ -654,31 +704,37 @@
                             <p class="prev mobNav" style="display: none">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
-                            <p class="prev">
+                            <!-- <p class="prev">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
                             <p class="next">
                                 Следующий шаг
                                 <img src="img/next.png" alt="">
-                            </p>
+                            </p> -->
                             <ul class="steps">
-                                <li class="done" id="step2">
-                                    <p>1</p>
+                                <li id="step2">
+                                        <div>1 шаг</div>
+                                        <p>Комната</p>
                                 </li>
-                                <li class="done" id="step3">
-                                    <p>2</p>
+                                <li id="step3">
+                                    <div>2 шаг</div>
+                                    <p>Тип</p>
                                 </li>
-                                <li id="step4" class="done">
-                                    <p>3</p>
+                                <li  id="step4">
+                                        <div>3 шаг</div>
+                                        <p>Размер</p>
                                 </li>
                                 <li id="step5" class="active">
-                                    <p>4</p>
+                                    <div>4 шаг</div>
+                                    <p>Наполнение</p>
                                 </li>
                                 <li id="step6">
-                                    <p>5</p>
+                                        <div>5 шаг</div>
+                                        <p>Вид</p>
                                 </li>
                                 <li id="step7">
-                                    <p>6</p>
+                                        <div>6 шаг</div>
+                                        <p>Условия</p>
                                 </li>
                             </ul>
                         </div>
@@ -726,31 +782,33 @@
                                 <ul>
                                     <li>
                                         <label for="galstuki">
-                                            <img src="img/shkaf/ico/galstuki.svg" alt=""> Галстуки
+                                             <div class="helper">Галстуки</div><img src="img/shkaf/ico/galstuki.svg" alt="" class="helper">
                                             <input id="galstuki" type="checkbox" name="ZshkafContain[]" value="галстуков">
                                         </label>
                                     </li>
                                     <li>
                                         <label for="kurtki">
-                                            <img src="img/shkaf/ico/kurtki.svg" alt=""> Куртки
+                                            <div>Куртки</div> <img src="img/shkaf/ico/kurtki.svg" alt="" class="helper"> 
                                             <input id="kurtki" type="checkbox" name="ZshkafContain[]" value="курток">
                                         </label>
                                     </li>
                                     <li>
                                         <label for="odezhda">
-                                            <img src="img/shkaf/ico/odezhda.svg" alt=""> Одежда и бельё
+                                            <div>Одежда и бельё</div> <img src="img/shkaf/ico/odezhda.svg" alt="" class="helper"> 
                                             <input id="odezhda" type="checkbox" name="ZshkafContain[]" value="одежды и белья">
                                         </label>
                                     </li>
                                     <li>
                                         <label for="obuv">
-                                            <img src="img/shkaf/ico/obuv.svg" alt=""> Обувь
+                                            <div>Обувь</div>
+                                            <img src="img/shkaf/ico/obuv.svg" alt="" class="helper"> 
                                             <input id="obuv" type="checkbox" name="ZshkafContain[]" value="обуви">
                                         </label>
                                     </li>
                                     <li>
                                         <label for="kot">
-                                            <img src="img/shkaf/ico/kot.svg" alt=""> Кот
+                                            <div>Кот</div>
+                                            <img src="img/shkaf/ico/kot.svg" alt="" class="helper"> 
                                             <input id="kot" type="checkbox" name="ZshkafContain[]" value="кота">
                                         </label>
                                     </li>
@@ -778,10 +836,20 @@
                                 </div>
                             </div>
                         </div>
+                        <nav class="navigation">
+                                <p class="prev">
+                                        <img src="img/prev.png" alt=""> Предыдущий шаг
+                                    </p>
+                                <p class="next">
+                                        Следующий шаг
+                                        <img src="img/next.png" alt="">
+                                </p>
+                        </nav>
                     </div>
-                    <div class="openNextStep">
+                    <!-- <div class="openNextStep">
                         <p>Далее</p>
-                    </div>
+                    </div> -->
+                    
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen7">
@@ -795,33 +863,39 @@
                             <p class="prev mobNav" style="display: none">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
-                            <p class="prev">
+                            <!-- <p class="prev">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
                             <p class="next">
                                 Следующий шаг
                                 <img src="img/next.png" alt="">
-                            </p>
+                            </p> -->
                             <ul class="steps">
-                                <li class="done" id="step2">
-                                    <p>1</p>
-                                </li>
-                                <li class="done" id="step3">
-                                    <p>2</p>
-                                </li>
-                                <li id="step4" class="done">
-                                    <p>3</p>
-                                </li>
-                                <li id="step5" class="done">
-                                    <p>4</p>
-                                </li>
-                                <li id="step6" class="active">
-                                    <p>5</p>
-                                </li>
-                                <li id="step7">
-                                    <p>6</p>
-                                </li>
-                            </ul>
+                                    <li id="step2">
+                                            <div>1 шаг</div>
+                                            <p>Комната</p>
+                                    </li>
+                                    <li id="step3">
+                                        <div>2 шаг</div>
+                                        <p>Тип</p>
+                                    </li>
+                                    <li  id="step4">
+                                            <div>3 шаг</div>
+                                            <p>Размер</p>
+                                    </li>
+                                    <li id="step5">
+                                        <div>4 шаг</div>
+                                        <p>Наполнение</p>
+                                    </li>
+                                    <li id="step6" class="active">
+                                            <div>5 шаг</div>
+                                            <p>Вид</p>
+                                    </li>
+                                    <li id="step7">
+                                            <div>6 шаг</div>
+                                            <p>Условия</p>
+                                    </li>
+                                </ul>
                         </div>
                     </nav>
                     <div class="container">
@@ -906,7 +980,7 @@
                                     </li>
 
                                 </ul>
-                                <div class="dontKnow">
+                                <!-- <div class="dontKnow">
                                     <label for="dontKnowCover">
                                         <p class="pseudoBtn">
                                             Пока не знаю
@@ -915,13 +989,23 @@
                                             <input type="checkbox" name="ZshkafCover[]" id="dontKnowCover" value="Не выбрано">
                                         </p>
                                     </label>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
+                        <nav class="navigation">
+                                <p class="prev">
+                                        <img src="img/prev.png" alt=""> Предыдущий шаг
+                                    </p>
+                                <p class="next">
+                                        Следующий шаг
+                                        <img src="img/next.png" alt="">
+                                </p>
+                        </nav>
                     </div>
-                    <div class="openNextStep">
+                    <!-- <div class="openNextStep">
                         <p>Далее</p>
-                    </div>
+                    </div> -->
+                    
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen8">
@@ -935,33 +1019,39 @@
                             <p class="prev mobNav" style="display: none">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
-                            <p class="prev">
+                            <!-- <p class="prev">
                                 <img src="img/prev.png" alt=""> Предыдущий шаг
                             </p>
                             <p class="next">
                                 Следующий шаг
                                 <img src="img/next.png" alt="">
-                            </p>
+                            </p> -->
                             <ul class="steps">
-                                <li class="done" id="step2">
-                                    <p>1</p>
-                                </li>
-                                <li class="done" id="step3">
-                                    <p>2</p>
-                                </li>
-                                <li id="step4" class="done">
-                                    <p>3</p>
-                                </li>
-                                <li id="step5" class="done">
-                                    <p>4</p>
-                                </li>
-                                <li id="step6" class="done">
-                                    <p>5</p>
-                                </li>
-                                <li id="step7" class="active">
-                                    <p>6</p>
-                                </li>
-                            </ul>
+                                    <li id="step2">
+                                            <div>1 шаг</div>
+                                            <p>Комната</p>
+                                    </li>
+                                    <li id="step3">
+                                        <div>2 шаг</div>
+                                        <p>Тип</p>
+                                    </li>
+                                    <li  id="step4">
+                                            <div>3 шаг</div>
+                                            <p>Размер</p>
+                                    </li>
+                                    <li id="step5">
+                                        <div>4 шаг</div>
+                                        <p>Наполнение</p>
+                                    </li>
+                                    <li id="step6" >
+                                            <div>5 шаг</div>
+                                            <p>Вид</p>
+                                    </li>
+                                    <li id="step7" class="active">
+                                            <div>6 шаг</div>
+                                            <p>Условия</p>
+                                    </li>
+                                </ul>
                         </div>
                     </nav>
                     <div class="container">
@@ -1032,15 +1122,25 @@
                                 </div>
                             </div>
                         </div>
+                        <nav class="navigation">
+                                <p class="prev">
+                                        <img src="img/prev.png" alt=""> Предыдущий шаг
+                                    </p>
+                                <p class="next">
+                                        Подобрать варианты
+                                        <img src="img/next.png" alt="">
+                                </p>
+                        </nav>
                     </div>
-                    <div class="openNextStep">
+                    <!-- <div class="openNextStep">
                         <p>Далее</p>
-                    </div>
+                    </div> -->
+                    
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen9">
                 <div class="tabletView">
-                    <nav class="navigation">
+                    <!-- <nav class="navigation">
                         <div class="container">
                             <p class="next mobNav" style="display: none">
                                 Следующий шаг
@@ -1057,7 +1157,7 @@
                                 <img src="img/next.png" alt="">
                             </p>
                         </div>
-                    </nav>
+                    </nav> -->
                     <div class="container">
                         <div class="plashka">
                             <p class="question">
@@ -1119,9 +1219,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="openNextStep">
-                        <p>Узнать стоимость</p>
-                    </div>
+                    
+                    <nav class="navigation">
+                            <!-- <p class="prev">
+                                    <img src="img/prev.png" alt=""> Предыдущий шаг
+                                </p>
+                            <p class="next">
+                                    Подобрать варианты
+                                    <img src="img/next.png" alt="">
+                            </p> -->
+                            <div class="openNextStep">
+                                    <p>Узнать стоимость</p>
+                                </div>
+                    </nav>
                 </div>
             </div>
             <div class="screen" style="display: none" id="screen10">
@@ -1131,55 +1241,53 @@
                             Благодарим за ответы!
                         </p>
                         <p class="description">
-                            Вы ответили на 6 вопросов и заработали персональную скидку!
+                            Вы ответили на 6 вопросов и заработали <strong>персональную скидку!</strong>
                         </p>
+                        <p class="description helper" >
+                                Оставьте свой номер телефона и мы закрепим за ним <strong>скидку 10%!</strong>
+                            </p>
+                            <span>Ваше имя</span>
                         <div class="quest">
-                            <label for="phone">Оставьте свой номер телефона и мы закрепим за ним скидку 10%! </label>
+                                
+                            <!-- <label for="phone">Оставьте свой номер телефона и мы закрепим за ним скидку 10%! </label> -->
                             <div class="name">
-                                <img src="img/balloon.png" alt="">
+                                    <label for="name">
+                                        
+                                <img src="img/name.jpg" alt="">
                                 <input type="text" name="name" id="name" placeholder="Ваше имя">
+                                </label>
                             </div>
                             <div class="phone">
-                                <img src="img/phone.png" alt="">
+                                    <label for="phone" class="test">
+                                <img src="img/phone.jpg" alt="">
                                 <input type="text" name="phone" id="phone" placeholder="+380(__)___-__-__">
-                                <!--                        <ul>-->
-                                <!--                            <li>-->
-                                <!--                                <img src="img/phone.svg" alt="">-->
-                                <!--                            </li>-->
-                                <!--                            <li>-->
-                                <!--                                +375-->
-                                <!--                            </li>-->
-                                <!--                            <li>-->
-                                <!--                                <select name="code" id="callCode">-->
-                                <!--                                    <option value="29">29</option>-->
-                                <!--                                    <option value="29">33</option>-->
-                                <!--                                    <option value="29">44</option>-->
-                                <!--                                    <option value="29">25</option>-->
-                                <!--                                    <option value="17">17</option>-->
-                                <!--                                </select>-->
-                                <!--                            </li>-->
-                                <!--                            <li>-->
-                                <!--                                <input type="text" name="phone" id="phone">-->
-                                <!--                            </li>-->
-                                <!--                        </ul>-->
-                                <p class="alert" style="display: none;">Введите корректный номер телефона</p>
+                                 </label>   
+                                
 
                             </div>
-                            <div class="vnimanie">Внимание! Срок действия скидки 10 дней! </div>
+                            
+                            <div class="itogBtn">
+                                    <input type="hidden" name="type" value="Калькулятор">
+                                    <input type="button" value="Узнать стоимость со скидкой!" id="calc-form">
+                                </div>
+                            <!-- <div class="vnimanie">Внимание! Срок действия скидки 10 дней! </div> -->
                         </div>
-                        <div class="itogBtn">
+                        <p class="alert" style="display: none;">Введите корректный номер телефона</p>
+                        <div class="vnimanie">
+                            <p id="vnimanie"><strong>Внимание!</strong> Срок действия скидки <strong>10 дней!</strong> </p>
+                        </div>
+                        <!-- <div class="itogBtn">
                             <input type="hidden" name="type" value="Калькулятор">
                             <input type="button" value="Узнать стоимость со скидкой!" id="calc-form">
-                        </div>
+                        </div> -->
                     </div>
                     <!--                <img src="img/baloonFinal.png" alt="" class="mBaloon">-->
                 </div>
             </div>
         </form>
-    </div>
-    </div>
+    </div>    
     <div class="showAllBlocks"></div>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
         $(document).on('ready', function () {
